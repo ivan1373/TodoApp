@@ -1,7 +1,7 @@
 import axios from "axios";
 import { NotificationManager } from 'react-notifications';
 
-const API = 'https://localhost:3988/api/Todo'
+const API = 'https://localhost:44370/api/Todo'
 
 export const getAll = () => {
     return axios
