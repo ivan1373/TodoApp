@@ -64,7 +64,7 @@ const TodoList = () => {
             <Grid item xs={12} style={{minWidth: '229px'}}>
                 <List dense={false}>
                     {
-                        items.map(
+                        items && items.map(
                             (item, index) => (
                                 <Todo key={index} item={item} refreshData={removeQuote}/>
                             )

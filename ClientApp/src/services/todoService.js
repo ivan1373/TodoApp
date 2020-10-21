@@ -1,7 +1,7 @@
 import axios from "axios";
 import { NotificationManager } from 'react-notifications';
 
-const API = 'https://localhost:5001/api/Todo'
+const API = 'https://localhost:3988/api/Todo'
 
 export const getAll = () => {
     return axios
@@ -13,7 +13,7 @@ export const getAll = () => {
             return response.data
         })
         .catch(error => {
-            return NotificationManager.error(error);
+            return NotificationManager.error(error.message);
         });
 };
 
